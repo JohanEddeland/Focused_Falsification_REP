@@ -1,0 +1,120 @@
+# Automatically generated STL formula
+# Model: BTL_art
+# Requirement: BTL_art
+# Author: Johan Lidén Eddeland
+
+# The following systems have been skipped and logged:
+
+# Parameters
+param t_init_BTL_art = 0, t_final_BTL_art = 30, dt = 0.04, artificial_ADI_BTL_min = 45, artificial_ADI_BTL_max = 55, artificial_BTL_time = 15
+
+##########
+# Inport #
+##########
+# BTL_art_sub1 := artificial_ADI_BTL[t]
+# Depth: 		0
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		signal_exp
+
+############
+# Constant #
+############
+# BTL_art_sub2 := artificial_ADI_BTL_min
+# Depth: 		0
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		signal_exp
+
+######################
+# RelationalOperator #
+######################
+# BTL_art_sub3 := (artificial_ADI_BTL[t] > artificial_ADI_BTL_min)
+# Depth: 		1
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		phi_exp
+
+############
+# Constant #
+############
+# BTL_art_sub4 := artificial_ADI_BTL_max
+# Depth: 		0
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		signal_exp
+
+######################
+# RelationalOperator #
+######################
+# BTL_art_sub5 := (artificial_ADI_BTL[t] < artificial_ADI_BTL_max)
+# Depth: 		1
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		phi_exp
+
+#########
+# Logic #
+#########
+# BTL_art_sub6 := ((artificial_ADI_BTL[t] > artificial_ADI_BTL_min)  and  (artificial_ADI_BTL[t] < artificial_ADI_BTL_max))
+# Depth: 		2
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		phi_exp
+
+############
+# Constant #
+############
+# BTL_art_sub7 := 0
+# Depth: 		0
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		signal_exp
+
+############
+# Constant #
+############
+# BTL_art_sub8 := artificial_BTL_time
+# Depth: 		0
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		signal_exp
+
+#############
+# SubSystem #
+#############
+# BTL_art_sub9 := (alw_[0, artificial_BTL_time](((artificial_ADI_BTL[t] > artificial_ADI_BTL_min)  and  (artificial_ADI_BTL[t] < artificial_ADI_BTL_max))))
+# Depth: 		3
+# Modal depth: 	1
+# Start delay: 	15
+# End delay: 	0
+# Type: 		phi_exp
+
+#########
+# Logic #
+#########
+# BTL_art_sub10 := not((alw_[0, artificial_BTL_time](((artificial_ADI_BTL[t] > artificial_ADI_BTL_min)  and  (artificial_ADI_BTL[t] < artificial_ADI_BTL_max)))))
+# Depth: 		4
+# Modal depth: 	1
+# Start delay: 	15
+# End delay: 	0
+# Type: 		phi_exp
+
+# =========== SUBREQUIREMENTS ============
+# No prerequisites!
+# phi_sub1 := not((alw_[0, artificial_BTL_time](((artificial_ADI_BTL[t] > artificial_ADI_BTL_min)  and  (artificial_ADI_BTL[t] < artificial_ADI_BTL_max)))))
+
+# =========== FINAL REQUIREMENT ===========
+# phi_implies is the formula when interpreting switches using "=>"
+# phi_implies := not((alw_[0, artificial_BTL_time](((artificial_ADI_BTL[t] > artificial_ADI_BTL_min)  and  (artificial_ADI_BTL[t] < artificial_ADI_BTL_max)))))
+
+phi_BTL_art := not((alw_[0, artificial_BTL_time](((artificial_ADI_BTL[t] > artificial_ADI_BTL_min)  and  (artificial_ADI_BTL[t] < artificial_ADI_BTL_max)))))
+

@@ -1,0 +1,190 @@
+# Automatically generated STL formula
+# Model: ADA_art
+# Requirement: ADA_art
+# Author: Johan Lidén Eddeland
+
+# The following systems have been skipped and logged:
+
+# Parameters
+param t_init_ADA_art = 0, t_final_ADA_art = 30, dt = 0.04, artificial_ADA_min = 45, artificial_ADA_max = 55, artificial_ASL_ADA_min = 10, artificial_ASL_ADA_max = 90, artificial_ADA_time = 15
+
+##########
+# Inport #
+##########
+# ADA_art_sub1 := artificial_ADA[t]
+# Depth: 		0
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		signal_exp
+
+############
+# Constant #
+############
+# ADA_art_sub2 := artificial_ADA_min
+# Depth: 		0
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		signal_exp
+
+######################
+# RelationalOperator #
+######################
+# ADA_art_sub3 := (artificial_ADA[t] > artificial_ADA_min)
+# Depth: 		1
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		phi_exp
+
+############
+# Constant #
+############
+# ADA_art_sub4 := artificial_ADA_max
+# Depth: 		0
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		signal_exp
+
+######################
+# RelationalOperator #
+######################
+# ADA_art_sub5 := (artificial_ADA[t] < artificial_ADA_max)
+# Depth: 		1
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		phi_exp
+
+#########
+# Logic #
+#########
+# ADA_art_sub6 := ((artificial_ADA[t] > artificial_ADA_min)  and  (artificial_ADA[t] < artificial_ADA_max))
+# Depth: 		2
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		phi_exp
+
+##########
+# Inport #
+##########
+# ADA_art_sub7 := artificial_ASL_ADA[t]
+# Depth: 		0
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		signal_exp
+
+############
+# Constant #
+############
+# ADA_art_sub8 := artificial_ASL_ADA_min
+# Depth: 		0
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		signal_exp
+
+######################
+# RelationalOperator #
+######################
+# ADA_art_sub9 := (artificial_ASL_ADA[t] > artificial_ASL_ADA_min)
+# Depth: 		1
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		phi_exp
+
+############
+# Constant #
+############
+# ADA_art_sub10 := artificial_ASL_ADA_max
+# Depth: 		0
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		signal_exp
+
+######################
+# RelationalOperator #
+######################
+# ADA_art_sub11 := (artificial_ASL_ADA[t] < artificial_ASL_ADA_max)
+# Depth: 		1
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		phi_exp
+
+#########
+# Logic #
+#########
+# ADA_art_sub12 := ((artificial_ASL_ADA[t] > artificial_ASL_ADA_min)  and  (artificial_ASL_ADA[t] < artificial_ASL_ADA_max))
+# Depth: 		2
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		phi_exp
+
+#########
+# Logic #
+#########
+# ADA_art_sub13 := (((artificial_ADA[t] > artificial_ADA_min)  and  (artificial_ADA[t] < artificial_ADA_max))  and  ((artificial_ASL_ADA[t] > artificial_ASL_ADA_min)  and  (artificial_ASL_ADA[t] < artificial_ASL_ADA_max)))
+# Depth: 		3
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		phi_exp
+
+############
+# Constant #
+############
+# ADA_art_sub14 := 0
+# Depth: 		0
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		signal_exp
+
+############
+# Constant #
+############
+# ADA_art_sub15 := artificial_ADA_time
+# Depth: 		0
+# Modal depth: 	0
+# Start delay: 	0
+# End delay: 	0
+# Type: 		signal_exp
+
+#############
+# SubSystem #
+#############
+# ADA_art_sub16 := (alw_[0, artificial_ADA_time]((((artificial_ADA[t] > artificial_ADA_min)  and  (artificial_ADA[t] < artificial_ADA_max))  and  ((artificial_ASL_ADA[t] > artificial_ASL_ADA_min)  and  (artificial_ASL_ADA[t] < artificial_ASL_ADA_max)))))
+# Depth: 		4
+# Modal depth: 	1
+# Start delay: 	15
+# End delay: 	0
+# Type: 		phi_exp
+
+#########
+# Logic #
+#########
+# ADA_art_sub17 := not((alw_[0, artificial_ADA_time]((((artificial_ADA[t] > artificial_ADA_min)  and  (artificial_ADA[t] < artificial_ADA_max))  and  ((artificial_ASL_ADA[t] > artificial_ASL_ADA_min)  and  (artificial_ASL_ADA[t] < artificial_ASL_ADA_max))))))
+# Depth: 		5
+# Modal depth: 	1
+# Start delay: 	15
+# End delay: 	0
+# Type: 		phi_exp
+
+# =========== SUBREQUIREMENTS ============
+# No prerequisites!
+# phi_sub1 := not((alw_[0, artificial_ADA_time]((((artificial_ADA[t] > artificial_ADA_min)  and  (artificial_ADA[t] < artificial_ADA_max))  and  ((artificial_ASL_ADA[t] > artificial_ASL_ADA_min)  and  (artificial_ASL_ADA[t] < artificial_ASL_ADA_max))))))
+
+# =========== FINAL REQUIREMENT ===========
+# phi_implies is the formula when interpreting switches using "=>"
+# phi_implies := not((alw_[0, artificial_ADA_time]((((artificial_ADA[t] > artificial_ADA_min)  and  (artificial_ADA[t] < artificial_ADA_max))  and  ((artificial_ASL_ADA[t] > artificial_ASL_ADA_min)  and  (artificial_ASL_ADA[t] < artificial_ASL_ADA_max))))))
+
+phi_ADA_art := not((alw_[0, artificial_ADA_time]((((artificial_ADA[t] > artificial_ADA_min)  and  (artificial_ADA[t] < artificial_ADA_max))  and  ((artificial_ASL_ADA[t] > artificial_ASL_ADA_min)  and  (artificial_ASL_ADA[t] < artificial_ASL_ADA_max))))))
+

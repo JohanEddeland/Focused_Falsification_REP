@@ -1,0 +1,15 @@
+[Warning: Name is nonexistent or not a directory: C:\TESTRON\testron\MultiReqFalsif\ARCH_ATwSS-dev\.\ARCH_ATwSS-dev] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setupAndLoadParamsMRF', 'C:\TESTRON\testron\MultiReqFalsif\setupAndLoadParamsMRF.m', 6)" style="font-weight:bold">setupAndLoadParamsMRF</a> (<a href="matlab: opentoline('C:\TESTRON\testron\MultiReqFalsif\setupAndLoadParamsMRF.m',6,0)">line 6</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runManyMRF', 'C:\TESTRON\testron\MultiReqFalsif\runManyMRF.m', 43)" style="font-weight:bold">runManyMRF</a> (<a href="matlab: opentoline('C:\TESTRON\testron\MultiReqFalsif\runManyMRF.m',43,0)">line 43</a>)] 
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cd')" style="font-weight:bold">cd</a>
+Cannot CD to C:\TESTRON\testron\MultiReqFalsif\ARCH_ATwSS-dev\.\ARCH_ATwSS-dev (Name is nonexistent or not a directory).
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setupAndLoadParamsMRF', 'C:\TESTRON\testron\MultiReqFalsif\setupAndLoadParamsMRF.m', 7)" style="font-weight:bold">setupAndLoadParamsMRF</a> (<a href="matlab: opentoline('C:\TESTRON\testron\MultiReqFalsif\setupAndLoadParamsMRF.m',7,0)">line 7</a>)
+cd('./ARCH_ATwSS-dev');
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runManyMRF', 'C:\TESTRON\testron\MultiReqFalsif\runManyMRF.m', 43)" style="font-weight:bold">runManyMRF</a> (<a href="matlab: opentoline('C:\TESTRON\testron\MultiReqFalsif\runManyMRF.m',43,0)">line 43</a>)
+                setupAndLoadParamsMRF(modelToUse, thisFile);
+} 
+runManyMRF

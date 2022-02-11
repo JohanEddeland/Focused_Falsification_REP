@@ -1,0 +1,15 @@
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('cd')" style="font-weight:bold">cd</a>
+Cannot CD to C:\TESTRON\testron\MultiReqFalsif\ARCH_ATwSS-dev\.\ARCH_ATwSS-dev (Name is nonexistent or not a directory).
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MRF/setupAndLoadParams', 'C:\TESTRON\testron\MultiReqFalsif\@MRF\setupAndLoadParams.m', 6)" style="font-weight:bold">MRF/setupAndLoadParams</a> (<a href="matlab: opentoline('C:\TESTRON\testron\MultiReqFalsif\@MRF\setupAndLoadParams.m',6,0)">line 6</a>)
+cd('./ARCH_ATwSS-dev');
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('MRF', 'C:\TESTRON\testron\MultiReqFalsif\@MRF\MRF.m', 98)" style="font-weight:bold">MRF</a> (<a href="matlab: opentoline('C:\TESTRON\testron\MultiReqFalsif\@MRF\MRF.m',98,0)">line 98</a>)
+            mrfResults = setupAndLoadParams(mrfResults);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runManyMRF', 'C:\TESTRON\testron\MultiReqFalsif\runManyMRF.m', 33)" style="font-weight:bold">runManyMRF</a> (<a href="matlab: opentoline('C:\TESTRON\testron\MultiReqFalsif\runManyMRF.m',33,0)">line 33</a>)
+                mrfResults = MRF([model '_artificial'], totalMaxEval, thisFile, ...
+} 
+<a href="matlab: opentoline('C:\TESTRON\testron\MultiReqFalsif\@MRF\setupAndLoadParams.m',6,1)">6   </a>cd('./ARCH_ATwSS-dev');
+if system_dependent('IsDebugMode')==1, dbquit; end
+runManyMRF

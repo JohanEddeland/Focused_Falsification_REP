@@ -1,0 +1,22 @@
+classdef MRF_run_summarizer
+    
+    properties
+        run_folder
+    end
+    
+    methods
+        function summarizer = MRF_run_summarizer(runFolder)
+            summarizer.runFolder = runFolder;
+            
+        end
+        
+        function summarizer = summarizeRun(summarizer)
+            
+            
+        end
+        
+        function summarizer = loadRuns
+        
+        
+    end
+end
